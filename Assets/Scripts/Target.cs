@@ -14,17 +14,22 @@ public class Target : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
+        if(health <= 0)
+        {
+            Shatter();
+        }
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if(broken) return;
 
-        if(collision.gameObject.GetComponent<MissileScript>() != null) TakeDamage(collision.gameObject.GetComponent<MissileScript>().damage);
-        if (collision.relativeVelocity.magnitude >= breakForce && collision.gameObject.GetComponent<MissileScript>() != null && health <= 0)
+        if(collision.relativeVelocity.magnitude >= breakForce && health <= 0 && collision.gameObject.GetComponent<MissileScript>() != null)
         {
             broken = true;
+            Vector3 scale = transform.localScale;
             var replacement = Instantiate(_replacement, transform.position, transform.rotation);
+            replacement.transform.localScale = scale / 100;
 
             var rbs = replacement.GetComponentsInChildren<Rigidbody>();
             foreach(var rb in rbs)
@@ -40,7 +45,9 @@ public class Target : MonoBehaviour
         if (broken) return;
         broken = true;
 
+        Vector3 scale = transform.localScale;
         var replacement = Instantiate(_replacement, transform.position, transform.rotation);
+        replacement.transform.localScale = scale / 100;
 
         var rbs = replacement.GetComponentsInChildren<Rigidbody>();
         foreach (var rb in rbs)
