@@ -16,7 +16,7 @@ public class Timer_Display : MonoBehaviour
         }
         else
         {
-            time = 0;
+            SceneLoader.Instance.LoadGameOverScene();
         }
 
         DisplayTime(time);
