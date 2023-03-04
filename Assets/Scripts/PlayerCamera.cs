@@ -20,8 +20,8 @@ public class PlayerCamera : MonoBehaviour
     private void Update()
     {
         // Getting the mouse x and y input
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.smoothDeltaTime * sensY;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.smoothDeltaTime * sensX;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.smoothDeltaTime * sensY * 10;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.smoothDeltaTime * sensX * 10;
 
         // Setting rotation variables based on mouse input
         rotationX -= mouseY;
