@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 122580971}
   - component: {fileID: 122580974}
   - component: {fileID: 122580973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,8 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
-  m_Layer: 0
+  - component: {fileID: 330585549}
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -340,6 +341,27 @@ MonoBehaviour:
   sensX: 15
   sensY: 15
   playerBody: {fileID: 437268490}
+--- !u!114 &330585549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b8defbb0a8f75e42b55a77f614b57ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  projectileLifeTime: 3
+  fireRate: 1
+  impactForce: 60
+  projectileForce: 30
+  fpsCam: {fileID: 330585545}
+  muzzleFlash: {fileID: 0}
+  impactEffect: {fileID: 0}
+  missile: {fileID: 3840526329675520423, guid: 50955dad9780f2a41bf3c9d1f1af2786, type: 3}
 --- !u!1 &350256191
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 350256192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: World
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +520,7 @@ GameObject:
   - component: {fileID: 437268490}
   - component: {fileID: 437268492}
   - component: {fileID: 437268491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,6 +560,7 @@ MonoBehaviour:
   controller: {fileID: 437268492}
   speed: 12
   gravity: -9.81
+  jumpHeight: 3
   groundCheck: {fileID: 1120637843}
   groundDistance: 0.4
   groundMask:
@@ -619,7 +642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1120637843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
