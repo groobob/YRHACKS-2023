@@ -7,8 +7,9 @@ public class PlayerCamera : MonoBehaviour
     public float sensX;
     public float sensY;
 
-    float rotationX;
-    float rotationY;
+    public Transform playerBody;
+
+    float xRotation = 0f;
 
     private void Start()
     {
@@ -19,18 +20,13 @@ public class PlayerCamera : MonoBehaviour
 
     private void Update()
     {
-        // Getting the mouse x and y input
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.smoothDeltaTime * sensY * 10;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.smoothDeltaTime * sensX * 10;
 
-        // Setting rotation variables based on mouse input
-        rotationX -= mouseY;
-        rotationY += mouseX;
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        // Sets a rotation interval for the y rotation on the camera
-        rotationX = Mathf.Clamp(rotationX, -90f, 90f);
-
-        // Rotating the camera and player
-        transform.rotation = Quaternion.Euler(rotationX, rotationY, 0);
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        playerBody.Rotate(Vector3.up * mouseX);
     }
 }
