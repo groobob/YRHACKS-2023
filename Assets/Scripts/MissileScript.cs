@@ -15,9 +15,10 @@ public class MissileScript : MonoBehaviour
 
         foreach(var obj in surroundingObjects) 
         {
-            if (obj.gameObject.tag == "Destructable")
+            if (obj.gameObject.tag == "Destructable" && obj.gameObject != collision.gameObject)
             {
                 obj.gameObject.GetComponent<Target>().TakeDamage(damage / 2);
+                if (obj.gameObject.GetComponent<Target>().health <= 0) obj.GetComponent<Target>().Shatter();
             }
             var rb = obj.GetComponent<Rigidbody>();
             if(rb == null) continue;

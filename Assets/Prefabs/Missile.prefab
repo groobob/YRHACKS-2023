@@ -4999,7 +4999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 5
-  explosionForce: 2500
+  explosionForce: 500
   particles: {fileID: 8560973224418685978, guid: e647c1bdbe822f54fa2d72918c05d2fa,
     type: 3}
   damage: 10
