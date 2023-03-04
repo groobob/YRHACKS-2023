@@ -24,10 +24,10 @@ public class GunScript : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Shoot();
             if (Time.time >= nextTimeToFire)
             {
-                nextTimeToFire = Time.time;
+                Shoot();
+                nextTimeToFire = Time.time + fireRate;
                 
                 Debug.Log("Fired");
             }
