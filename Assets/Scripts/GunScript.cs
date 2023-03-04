@@ -48,7 +48,8 @@ public class GunScript : MonoBehaviour
     {
         //muzzleFlash.Play();
 
-        GameObject missileShot = Instantiate(missile, viewModel.transform.position, fpsCam.transform.rotation);
+        GameObject missileShot = Instantiate(missile, fpsCam.transform.position, fpsCam.transform.rotation);
+        missileShot.GetComponent<MissileScript>().damage = damage;
         Rigidbody rb = missileShot.GetComponent<Rigidbody>();
         rb.AddForce(rb.transform.forward * projectileForce, ForceMode.Impulse);
 
