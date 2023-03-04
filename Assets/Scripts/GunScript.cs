@@ -9,7 +9,7 @@ public class GunScript : MonoBehaviour
     public float fireRate = 1;
     public float impactForce = 60f;
     public float projectileForce = 300f;
-
+    private float nextTimeToFire = 0f;
 
     public Camera fpsCam;
     public GameObject viewModel;
@@ -17,10 +17,10 @@ public class GunScript : MonoBehaviour
     public GameObject impactEffect;
 
     public GameObject missile;
-
-    private float nextTimeToFire = 0f;
-
     public Animator animator;
+
+    private float attackBuffDuration = 5f;
+    private float attackBuffAmount = 1/2;
 
     // Update is called once per frame
     void Update()
@@ -38,8 +38,7 @@ public class GunScript : MonoBehaviour
                 Shoot();
                 animator.SetBool("HasRocket", false);
                 nextTimeToFire = Time.time + fireRate;
-                
-                Debug.Log("Fired");
+                AttackSpeedBuff();
             }
         }
     }
@@ -49,11 +48,10 @@ public class GunScript : MonoBehaviour
         //muzzleFlash.Play();
 
         GameObject missileShot = Instantiate(missile, fpsCam.transform.position, fpsCam.transform.rotation);
+        missileShot.transform.Rotate(0, -90f, 0, Space.Self);
         missileShot.GetComponent<MissileScript>().damage = damage;
         Rigidbody rb = missileShot.GetComponent<Rigidbody>();
-        rb.AddForce(rb.transform.forward * projectileForce, ForceMode.Impulse);
-
-        Debug.Log(missileShot);
+        rb.AddForce(rb.transform.right * projectileForce, ForceMode.Impulse);
 
         Destroy(missileShot, projectileLifeTime);
         /*
@@ -80,5 +78,21 @@ public class GunScript : MonoBehaviour
             //Destroy(impactGO, 2f);
         }
         */
+    }
+
+    public IEnumerator AttackSpeedBuff()
+    {
+        Debug.Log("Attack Speed Buff");
+        float oldFireRate = fireRate;
+        Debug.Log(oldFireRate);
+        fireRate = attackBuffAmount;
+        yield return new WaitForSeconds(attackBuffDuration);
+        Debug.Log("Finished");
+        fireRate = oldFireRate;
+    }
+
+    public void GiveAttackSpeed()
+    {
+        StartCoroutine(AttackSpeedBuff());
     }
 }
