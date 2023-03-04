@@ -40,4 +40,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("End Screen");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
