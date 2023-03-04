@@ -27,10 +27,16 @@ public class Target : MonoBehaviour
         if(collision.relativeVelocity.magnitude >= breakForce && health <= 0 && collision.gameObject.GetComponent<MissileScript>() != null)
         {
             broken = true;
+<<<<<<< Updated upstream
 
             Vector3 scale = transform.localScale;
             var replacement = Instantiate(_replacement, transform.position, transform.rotation);
             replacement.transform.localScale = scale;
+=======
+            Vector3 scale = transform.localScale;
+            var replacement = Instantiate(_replacement, transform.position, transform.rotation);
+            replacement.transform.localScale = scale / 100;
+>>>>>>> Stashed changes
 
             var rbs = replacement.GetComponentsInChildren<Rigidbody>();
             foreach(var rb in rbs)
@@ -48,7 +54,11 @@ public class Target : MonoBehaviour
 
         Vector3 scale = transform.localScale;
         var replacement = Instantiate(_replacement, transform.position, transform.rotation);
+<<<<<<< Updated upstream
         replacement.transform.localScale = scale;
+=======
+        replacement.transform.localScale = scale / 100;
+>>>>>>> Stashed changes
 
         var rbs = replacement.GetComponentsInChildren<Rigidbody>();
         foreach (var rb in rbs)
