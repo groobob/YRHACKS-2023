@@ -48,7 +48,7 @@ public class GunScript : MonoBehaviour
                 Shoot();
                 animator.SetBool("HasRocket", false);
                 nextTimeToFire = Time.time + fireRate;
-                playSound.Play();
+                //playSound.Play();
                 Debug.Log("Fired");
             }
         }
