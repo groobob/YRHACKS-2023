@@ -21,8 +21,20 @@ public class GunScript : MonoBehaviour
     private float nextTimeToFire = 0f;
 
     public Animator animator;
+<<<<<<< Updated upstream
     public AudioSource playSound;
 
+=======
+
+    private float attackBuffAmount = 1/4f;
+    private float attackBuffDuration = 5f;
+
+    private float explosionBuffForce = 800;
+    private float explosionBuffDamage = 25f;
+    private float explosionBuffRadius = 10;
+    private float explosionBuffDuration = 8f;
+    public AudioSource playSound;
+>>>>>>> Stashed changes
     // Update is called once per frame
     void Update()
 
