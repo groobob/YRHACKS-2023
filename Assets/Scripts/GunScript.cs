@@ -19,11 +19,10 @@ public class GunScript : MonoBehaviour
     public GameObject missile;
     public Animator animator;
 
-    private float attackBuffDuration = 5f;
-    private float attackBuffAmount = 1/2;
-
     // Update is called once per frame
     void Update()
+
+    
     {
         if (Time.time >= nextTimeToFire-0.2)
         {
@@ -38,7 +37,8 @@ public class GunScript : MonoBehaviour
                 Shoot();
                 animator.SetBool("HasRocket", false);
                 nextTimeToFire = Time.time + fireRate;
-                AttackSpeedBuff();
+                
+                Debug.Log("Fired");
             }
         }
     }
