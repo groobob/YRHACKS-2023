@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17342675, g: 0.6333132, b: 1.0899814, a: 1}
+  m_IndirectSpecularColor: {r: 0.17342672, g: 0.6333132, b: 1.0899814, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -247,6 +247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -554,6 +559,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -622,6 +632,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
@@ -849,6 +864,7 @@ MonoBehaviour:
   impactEffect: {fileID: 0}
   missile: {fileID: 3840526329675520423, guid: 50955dad9780f2a41bf3c9d1f1af2786, type: 3}
   animator: {fileID: 691475890}
+  playSound: {fileID: 0}
 --- !u!82 &330585550
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1046,6 +1062,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1001 &376833892
@@ -1059,6 +1080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -1128,6 +1154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
@@ -1257,6 +1288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: house
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
@@ -1474,6 +1510,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building
       objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
       propertyPath: m_RootOrder
@@ -1596,6 +1637,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -1731,6 +1777,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1001 &512701170
@@ -1744,6 +1795,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -1814,6 +1870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -1882,6 +1943,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -6900,6 +6966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1001 &625743335
@@ -6913,6 +6984,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -6994,6 +7070,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -7160,6 +7241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
       propertyPath: m_RootOrder
@@ -7300,6 +7386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1 &832575517
@@ -7428,6 +7519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1001 &873639583
@@ -7441,6 +7537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -7510,6 +7611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -7586,6 +7692,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men 1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -7661,6 +7772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
       propertyPath: m_RootOrder
@@ -7729,6 +7845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -7946,6 +8067,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1001 &1063673675
@@ -8025,6 +8151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!1 &1120637842
@@ -8081,6 +8212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -8394,6 +8530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
       propertyPath: m_RootOrder
@@ -8480,7 +8621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b04422f9c39fc864e99e059c687557b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsText: {fileID: 1775387692}
 --- !u!4 &1333471281
 Transform:
   m_ObjectHideFlags: 0
@@ -8513,6 +8653,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -8648,6 +8793,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!4 &1415259127 stripped
@@ -8667,6 +8817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
@@ -8787,6 +8942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -8861,6 +9021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -9001,6 +9166,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
       propertyPath: m_RootOrder
@@ -9076,6 +9246,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -9150,6 +9325,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
@@ -9373,6 +9553,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
       propertyPath: m_RootOrder
@@ -9442,6 +9627,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1060590378702777930, guid: 959de37ef5348c14ab0278a9655a3373,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 1060590378702777931, guid: 959de37ef5348c14ab0278a9655a3373,
         type: 3}
       propertyPath: m_RootOrder
@@ -9510,6 +9700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: 8c2a2df3df3550c43bef9f3550804695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: 8c2a2df3df3550c43bef9f3550804695,
         type: 3}
@@ -9586,6 +9781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pile of men 1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}
       propertyPath: m_RootOrder
@@ -9654,6 +9854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Eifel tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 16754800419268625, guid: 7dbdcf29bfd50284d961db49f3b8a9fd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 16754800419268626, guid: 7dbdcf29bfd50284d961db49f3b8a9fd,
         type: 3}
@@ -9859,6 +10064,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: house (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2094011578972573135, guid: 9d271e5b48064e4499fddb5041177fb0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d271e5b48064e4499fddb5041177fb0, type: 3}
 --- !u!4 &2009769346 stripped
@@ -9884,6 +10094,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pile of men 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114447061907649136, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Destructable
       objectReference: {fileID: 0}
     - target: {fileID: 8304080815631675137, guid: f171f285cb1ee774e8b2ab1807b4a6d1,
         type: 3}

@@ -20,16 +20,17 @@ public class MissileScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         var surroundingObjects = Physics.OverlapSphere(transform.position, explosionRadius);
-        
-        foreach(var obj in surroundingObjects) 
+
+        foreach (var obj in surroundingObjects)
         {
             if (obj.gameObject.tag == "Destructable")
-            {
-                obj.gameObject.GetComponent<Target>().TakeDamage(damage / 2);
-                if (obj.gameObject.GetComponent<Target>().health <= 0) obj.GetComponent<Target>().Shatter();
-            }
+                if (obj.gameObject.tag == "Destructable" && obj.gameObject != collision.gameObject)
+                {
+                    obj.gameObject.GetComponent<Target>().TakeDamage(damage / 2);
+                    if (obj.gameObject.GetComponent<Target>().health <= 0) obj.GetComponent<Target>().Shatter();
+                }
             var rb = obj.GetComponent<Rigidbody>();
-            if(rb == null) continue;
+            if (rb == null) continue;
 
             rb.AddExplosionForce(explosionForce, transform.position, explosionRadius);
         }
