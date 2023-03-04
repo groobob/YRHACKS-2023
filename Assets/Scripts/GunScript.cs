@@ -8,10 +8,11 @@ public class GunScript : MonoBehaviour
     public float projectileLifeTime = 3f;
     public float fireRate = 1;
     public float impactForce = 60f;
-    public float projectileForce = 30f;
+    public float projectileForce = 300f;
 
 
     public Camera fpsCam;
+    public GameObject viewModel;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
 
@@ -19,14 +20,23 @@ public class GunScript : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
+    public Animator animator;
+
     // Update is called once per frame
     void Update()
     {
+        if (Time.time >= nextTimeToFire-0.2)
+        {
+            animator.SetBool("HasRocket", true);
+        }
+
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (Time.time >= nextTimeToFire)
             {
                 Shoot();
+                animator.SetBool("HasRocket", false);
                 nextTimeToFire = Time.time + fireRate;
                 
                 Debug.Log("Fired");
@@ -38,6 +48,7 @@ public class GunScript : MonoBehaviour
     {
         //muzzleFlash.Play();
 
+        GameObject missileShot = Instantiate(missile, viewModel.transform.position, fpsCam.transform.rotation);
         GameObject missileShot = Instantiate(missile, fpsCam.transform.position, fpsCam.transform.rotation);
         missileShot.GetComponent<MissileScript>().damage = damage;
         Rigidbody rb = missileShot.GetComponent<Rigidbody>();
