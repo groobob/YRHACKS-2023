@@ -21,9 +21,12 @@ public class GunScript : MonoBehaviour
     private float nextTimeToFire = 0f;
 
     public Animator animator;
+    public AudioSource playSound;
 
     // Update is called once per frame
     void Update()
+
+    
     {
         if (Time.time >= nextTimeToFire-0.2)
         {
@@ -38,7 +41,7 @@ public class GunScript : MonoBehaviour
                 Shoot();
                 animator.SetBool("HasRocket", false);
                 nextTimeToFire = Time.time + fireRate;
-                
+                playSound.Play();
                 Debug.Log("Fired");
             }
         }
