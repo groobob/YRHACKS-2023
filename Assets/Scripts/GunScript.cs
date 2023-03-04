@@ -29,7 +29,7 @@ public class GunScript : MonoBehaviour
     private float explosionBuffDamage = 25f;
     private float explosionBuffRadius = 10;
     private float explosionBuffDuration = 8f;
-
+    public AudioSource playSound;
     // Update is called once per frame
     void Update()
 
@@ -48,7 +48,7 @@ public class GunScript : MonoBehaviour
                 Shoot();
                 animator.SetBool("HasRocket", false);
                 nextTimeToFire = Time.time + fireRate;
-                
+                playSound.Play();
                 Debug.Log("Fired");
             }
         }
