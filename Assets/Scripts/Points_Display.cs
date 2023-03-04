@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+/*
 public class Points_Display : MonoBehaviour
 {
     public TMP_Text pointsText;
-    public int points = 0;
 
     void Update()
     {
-        DisplayPoints(points);
+        DisplayPoints(PointsHandler.Instance.score);
     }   
 
     void DisplayPoints(float pointsDisplay)
@@ -20,6 +19,7 @@ public class Points_Display : MonoBehaviour
             pointsDisplay = 0;
         }
 
-        pointsText.text = string.Format("{0}", points);
+        pointsText.text = string.Format("{0}", PointsHandler.Instance.score);
     }
 }
+*/

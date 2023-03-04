@@ -9,6 +9,7 @@ public class Target : MonoBehaviour
     [SerializeField] private float collisionMultiplier = 100;
     [SerializeField] private float shatterForce = 1000;
     [SerializeField] private bool broken;
+    [SerializeField] private int pointValue;
     public float health = 50f;
 
     public void TakeDamage(float amount)
@@ -36,6 +37,7 @@ public class Target : MonoBehaviour
             {
                 rb.AddExplosionForce(collision.relativeVelocity.magnitude * collisionMultiplier, collision.contacts[0].point, 2);
             }
+            //PointsHandler.Instance.score += pointValue;
             Destroy(gameObject);
         }
     }
@@ -54,6 +56,7 @@ public class Target : MonoBehaviour
         {
             rb.AddExplosionForce(shatterForce, transform.position, 2);
         }
+        //PointsHandler.Instance.score += pointValue;
         Destroy(gameObject);
     }
 }
